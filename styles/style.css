@@ -1,0 +1,610 @@
+@font-face{
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-SemiBold/ttf");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+
+}
+@font-face{
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Medium.ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+
+}
+@font-face {
+    font-family: "Google Sans";
+    src: url("../fonts/GoogleSans-Medium.ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Volkhov";
+    src: url("../fonts/Volkhov-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Volkhov";
+    src: url("../fonts/Volkhov-Italic.ttf");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+.header {
+    display: flex;
+    justify-content: space-between; /* Размещает элементы по краям контейнера */
+    align-items: center; /* Выравнивает элементы по вертикали */
+    padding: 20px; /* Добавляет отступы вокруг содержимого */
+    background-color:transparent; /* Белый фон */
+    margin-left: 122px;
+    margin-right: 207px;
+}
+.body{
+    width: 1440px; /*  Задайте желаемую ширину */
+    margin: 0 auto; /*  Центрирует сайт по горизонтали */
+    background-image: url(../images/decoration.svg); /* Путь к изображению */
+    background-position: top right;
+    background-size: 873px 694px; /*  Растягивает изображение, чтобы покрыть весь фон */
+    background-repeat: no-repeat; /*  Запрещает повторение изображения */
+    background-attachment:local; /*  Фиксирует изображение при прокрутке */
+}
+.nav {
+    display: flex; /* Используем flexbox для навигации */
+    align-items: center; /* Выравниваем элементы по вертикали */
+}
+
+.menu-link{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: #212832;
+    text-decoration: none;
+    font-family: "Google Sans", Arial, sans-serif;
+    margin-right: 50px;
+}
+.button {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Google Sans", Arial, sans-serif;
+    line-height: 22px;
+    background-color: transparent;
+    color: #212832;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer; 
+    margin-right: 42px;
+}
+.button-transparent{
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Google Sans", Arial, sans-serif;
+    line-height: 22px;
+    background-color: transparent;
+    color: #212832;
+    border: 1px ;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.gal{
+    margin-left: 5px;
+    margin-bottom: 4px;
+}
+
+
+.hero{
+    padding: 50px 0;
+}
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.hero-content{
+    width: 50%;
+}
+.best-destinations{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: #DF6951;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+    display: block;
+}
+.b-link{
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 89px;
+    letter-spacing: -4%;
+    color: #181E4B;
+    text-decoration: none;
+    font-family: "Volkhov", Arial, sans-serif;
+    margin-bottom: 30px;
+    margin-top: 16px;
+}
+.decor-word {
+    position: relative;
+    display: inline-block;
+  }
+  
+.decor-underline {
+    position: absolute;
+    left: -30px;
+    bottom: 7px;
+    width: 170%;
+    height: 20px;
+    pointer-events: none;
+    z-index: -1;
+}
+.abzats{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #5E6282;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+    margin-bottom: 26px;
+}
+.findout{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Google Sans", Arial, sans-serif;
+    line-height: 22px;
+    background-color: #F1A501;
+    color: #FFFFFF;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 20px 25px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.demo{
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Poppins", Arial, sans-serif;
+    line-height: 22px;
+    background-color: transparent;
+    color: #686D77;
+    border: 1px ;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Расстояние между иконкой и текстом */
+    white-space: nowrap; /* Запрет переноса текста */
+}
+.demo-krug{
+    margin-right: 15px;
+}
+.buttons-container {
+    display: flex;
+    align-items: center;
+    gap: 44px; /* Заменяет margin-right у .findout */
+  }
+.hero-image{
+    width: 40%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    margin-right: 95px;
+}
+
+
+
+
+.section-services{
+    padding: 60px 0;
+    width: 1230px; 
+    margin: 0 auto; 
+    background-image: url(../images/decor_plusiki.png); 
+    background-position: top right;
+    background-size: 153px 166px; 
+    background-repeat: no-repeat; 
+    background-attachment:local;
+    z-index: -1;
+  }
+.services-container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.services-header{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.services{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 22px;
+    color: #14183E;
+    text-decoration: none;
+    font-family: "Volkhov", Arial, sans-serif;
+}
+.category{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #5E6282;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.services-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+    list-style-type: none;
+}
+.service-card{
+    background: white;
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+}
+.flights-card{
+    width: 302px; /*  Задайте желаемую ширину */
+    margin: 0 auto; /*  Центрирует сайт по горизонтали */
+    background-image: url(../images/red_kvadrat.png); /* Путь к изображению */
+    background-position: bottom left;
+    background-size: 100px 100px; /*  Растягивает изображение, чтобы покрыть весь фон */
+    background-repeat: no-repeat; /*  Запрещает повторение изображения */
+    background-attachment:local; /*  Фиксирует изображение при прокрутке */
+    z-index: -1;
+} 
+.flights{
+    background: white;
+    border-radius: 36px;
+    width: 190px; /*  Задайте желаемую ширину */
+    margin: 0 auto;
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+}
+.category-servises{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    color: #1E1D4C;
+    text-decoration: none;
+    font-family: "Google Sans", Arial, sans-serif; 
+    margin-bottom: 15px;
+}
+.service-description{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #5E6282;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+}
+
+
+/*.destination-container{
+    max-width: 1102px;
+    margin: 0 auto;
+    padding-right: 60px;
+}
+.top-selling{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #5E6282;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.top-destination{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 22px;
+    color: #14183E;
+    text-decoration: none;
+    font-family: "Volkhov", Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.destination-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    list-style-type: none;
+}
+.rome-card{
+    background-image:url(../images/rome.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    width: 314px;
+    border-radius: 24px;
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+}
+.london{
+    background-image:url(../images/london.png); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    width: 314px;
+    border-radius: 24px;
+}
+.info-box{
+    position: absolute;
+    background-color: #FFFFFF;
+    border-radius: 0 0 24px 24px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+
+}
+.contry-name{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 124.5%;
+    color: #5E6282;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+}
+.price{
+    padding-left: 85px;
+
+}
+.trip-period{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 124.5%;
+    color: #5E6282;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+}*/
+.destination-container {
+    max-width: 1102px;
+    margin: 0 auto;
+    padding-right: 60px;
+   }
+  
+   .top-selling {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #5E6282;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 8px;
+   }
+  
+   .top-destination {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 22px;
+    color: #14183E;
+    text-decoration: none;
+    font-family: "Volkhov", Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 60px;
+   }
+  
+   .destination-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    list-style-type: none;
+    padding: 0;
+    /* Reset default padding */
+   }
+  
+   .rome-card {
+    background-image: url(../images/rome.png);
+    background-size: auto;
+    background-position: top;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 0 0 24px 24px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+    height: 457px;
+   }
+  
+   .london {
+    background-image: url(../images/london.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    /* Make responsive */
+    border-radius: 24px;
+    height: 457px;
+    /* Added height to match the Europe card */
+
+   }
+  
+   .europe-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+   }
+  
+   .info-box {
+    position: absolute;
+    background-color: #FFFFFF;
+    border-radius: 0 0 24px 24px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+   }
+  
+   .contry-name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 124.5%;
+    color: #5E6282;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+    margin-bottom: 0.5em;
+    /* Spacing নিচে নামানোর জন্য */
+   }
+  
+   .price {
+    float: right;
+    /* Align to the right */
+   }
+  
+   .trip-period {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 124.5%;
+    color: #5E6282;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+    display: flex;
+    /* Use flexbox for alignment */
+    align-items: center;
+    /* Vertically center items */
+   }
+  
+   .trip-period-img {
+    margin-right: 5px;
+    /* Space between icon and text */
+   }
+  
+
+
+
+
+
+
+
+.steps{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 124.5%;
+    color: #5E6282;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+}
+.trip-title{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 124.5%;
+    letter-spacing: 1.5%;
+    color: #080809;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+}
+.trip-dates-and-autor{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 124.5%;
+    letter-spacing: -0.5%;
+    color: #5E6282;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+}
+.people-going{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 124.5%;
+    letter-spacing: -2%;
+    color: #5E6282;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+}
+.card-container{
+    position: relative;
+    width: 486px;
+    margin: 60px;
+}
+.trip-card{
+    width: 370px;
+    background: #FFFFFF;
+    border-radius: 26px;
+    padding: 24px;
+    box-shadow: 0 4px 24px rgba(89, 177, 230, 0.08);
+    position: relative;
+    z-index: 1;
+}
+.overlay-card{
+    display: flex;
+    gap: 12px;
+    position: absolute;
+    background: #FFFFFF;
+    top: 218px;
+    right: -35px;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    padding: 16px 20px;
+    width: 263px;
+    z-index: 2;
+}
+.ongoing{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 124.5%;
+    letter-spacing: -3.5%;
+    color: #84829A;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+}
+.trip-to-rome{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 124.5%;
+    letter-spacing: -1.5%;
+    color: #080809;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+}
+.protsents{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 124.5%;
+    letter-spacing: -5.5%;
+    color: #080809;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+}
+.prots{
+    color: #8A79DF;
+}
+.testimonials{
+    background: #fff;
+    padding: 34px;
+    max-width: 505px;
+    margin: 34px 48px 77px 37px;
+    z-index: 2;
+}
+.logos{
+    width: 1073px;
+    height: 162px; 
+}
+.logo-names{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 99px;
+    padding: 0 ;
+
+}
