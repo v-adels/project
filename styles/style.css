@@ -38,25 +38,27 @@
 }
 .header {
     display: flex;
-    justify-content: space-between; /* Размещает элементы по краям контейнера */
-    align-items: center; /* Выравнивает элементы по вертикали */
-    padding: 20px; /* Добавляет отступы вокруг содержимого */
-    background-color:transparent; /* Белый фон */
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px; 
+    background-color:transparent; 
     margin-left: 122px;
     margin-right: 207px;
 }
+
+
 .body{
-    width: 1440px; /*  Задайте желаемую ширину */
-    margin: 0 auto; /*  Центрирует сайт по горизонтали */
-    background-image: url(../images/decoration.svg); /* Путь к изображению */
+    width: 1440px; 
+    margin: 0 auto; 
+    background-image: url(../images/decoration.svg); 
     background-position: top right;
-    background-size: 873px 694px; /*  Растягивает изображение, чтобы покрыть весь фон */
-    background-repeat: no-repeat; /*  Запрещает повторение изображения */
-    background-attachment:local; /*  Фиксирует изображение при прокрутке */
+    background-size: 873px 694px; 
+    background-repeat: no-repeat; 
+    background-attachment:local; 
 }
-.nav {
-    display: flex; /* Используем flexbox для навигации */
-    align-items: center; /* Выравниваем элементы по вертикали */
+.nav{
+    display: flex;
+    align-items: center;
 }
 
 .menu-link{
@@ -68,7 +70,7 @@
     font-family: "Google Sans", Arial, sans-serif;
     margin-right: 50px;
 }
-.button {
+.button{
     font-size: 17px;
     font-weight: 400;
     font-family: "Google Sans", Arial, sans-serif;
@@ -132,12 +134,11 @@
     margin-bottom: 30px;
     margin-top: 16px;
 }
-.decor-word {
+.decor-word{
     position: relative;
     display: inline-block;
-  }
-  
-.decor-underline {
+} 
+.decor-underline{
     position: absolute;
     left: -30px;
     bottom: 7px;
@@ -181,17 +182,17 @@
     cursor: pointer;
     display: inline-flex;
     align-items: center;
-    gap: 8px; /* Расстояние между иконкой и текстом */
-    white-space: nowrap; /* Запрет переноса текста */
+    gap: 8px;
+    white-space: nowrap; 
 }
 .demo-krug{
     margin-right: 15px;
 }
-.buttons-container {
+.buttons-container{
     display: flex;
     align-items: center;
-    gap: 44px; /* Заменяет margin-right у .findout */
-  }
+    gap: 44px;
+}
 .hero-image{
     width: 40%;
     max-width: 100%;
@@ -199,8 +200,6 @@
     display: flex;
     margin-right: 95px;
 }
-
-
 
 
 .section-services{
@@ -213,7 +212,7 @@
     background-repeat: no-repeat; 
     background-attachment:local;
     z-index: -1;
-  }
+}
 .services-container{
     max-width: 1230px;
     margin: 0 auto;
@@ -255,19 +254,19 @@
     text-align: center;
 }
 .flights-card{
-    width: 302px; /*  Задайте желаемую ширину */
-    margin: 0 auto; /*  Центрирует сайт по горизонтали */
-    background-image: url(../images/red_kvadrat.png); /* Путь к изображению */
+    width: 302px;
+    margin: 0 auto;
+    background-image: url(../images/red_kvadrat.png); 
     background-position: bottom left;
-    background-size: 100px 100px; /*  Растягивает изображение, чтобы покрыть весь фон */
-    background-repeat: no-repeat; /*  Запрещает повторение изображения */
-    background-attachment:local; /*  Фиксирует изображение при прокрутке */
+    background-size: 100px 100px; 
+    background-repeat: no-repeat; 
+    background-attachment:local;
     z-index: -1;
 } 
 .flights{
     background: white;
     border-radius: 36px;
-    width: 190px; /*  Задайте желаемую ширину */
+    width: 190px; 
     margin: 0 auto;
     padding: 30px;
     align-items: center;
@@ -293,10 +292,12 @@
 }
 
 
-/*.destination-container{
+.destination-container{
     max-width: 1102px;
-    margin: 0 auto;
     padding-right: 60px;
+    background-image:url(../images/line.svg);
+    background-position: bottom right;
+    background-repeat: no-repeat; 
 }
 .top-selling{
     font-weight: 600;
@@ -319,40 +320,26 @@
     margin-bottom: 60px;
 }
 .destination-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 35px;
-    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
 }
-.rome-card{
-    background-image:url(../images/rome.png);
-    background-size: cover;
-    background-position: center;
-    position: relative;
+.destination-card{
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
     overflow: hidden;
     width: 314px;
-    border-radius: 24px;
-    border: 1px solid rgba(0,0,0,0.08);
-    box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow .2s;
 }
-.london{
-    background-image:url(../images/london.png); 
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    overflow: hidden;
-    width: 314px;
-    border-radius: 24px;
-}
-.info-box{
-    position: absolute;
-    background-color: #FFFFFF;
-    border-radius: 0 0 24px 24px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px;
-
+.destination-info{
+    padding: 22px 20px 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 .contry-name{
     font-weight: 400;
@@ -364,7 +351,6 @@
 }
 .price{
     padding-left: 85px;
-
 }
 .trip-period{
     font-weight: 400;
@@ -373,129 +359,38 @@
     color: #5E6282;
     text-decoration: none;
     font-family: "Poppins", Arial, sans-serif;
-}*/
-.destination-container {
-    max-width: 1102px;
-    margin: 0 auto;
-    padding-right: 60px;
-   }
-  
-   .top-selling {
+}
+
+
+.book-trip{
+    width: 1114px;
+    margin-top: 185px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 117px;
+    padding-left: 186px;
+}
+.easy{
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
     color: #5E6282;
     text-decoration: none;
-    font-family: "Poppins", Arial, sans-serif;
-    text-align: center;
-    margin-bottom: 8px;
-   }
-  
-   .top-destination {
+    font-family: "Poppins", Arial, sans-serif;;
+    text-align: left;
+    margin-bottom: 16px;
+}
+.book{
     font-weight: 700;
     font-size: 50px;
-    line-height: 22px;
     color: #14183E;
     text-decoration: none;
     font-family: "Volkhov", Arial, sans-serif;
-    text-align: center;
-    margin-bottom: 60px;
-   }
-  
-   .destination-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 35px;
-    list-style-type: none;
-    padding: 0;
-    /* Reset default padding */
-   }
-  
-   .rome-card {
-    background-image: url(../images/rome.png);
-    background-size: auto;
-    background-position: top;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    border-radius: 0 0 24px 24px;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
-    height: 457px;
-   }
-  
-   .london {
-    background-image: url(../images/london.png);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    /* Make responsive */
-    border-radius: 24px;
-    height: 457px;
-    /* Added height to match the Europe card */
-
-   }
-  
-   .europe-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 24px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
-   }
-  
-   .info-box {
-    position: absolute;
-    background-color: #FFFFFF;
-    border-radius: 0 0 24px 24px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px;
-   }
-  
-   .contry-name {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 124.5%;
-    color: #5E6282;
-    text-decoration: none;
-    font-family: "Poppins", Arial, sans-serif;
-    margin-bottom: 0.5em;
-    /* Spacing নিচে নামানোর জন্য */
-   }
-  
-   .price {
-    float: right;
-    /* Align to the right */
-   }
-  
-   .trip-period {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 124.5%;
-    color: #5E6282;
-    text-decoration: none;
-    font-family: "Poppins", Arial, sans-serif;
-    display: flex;
-    /* Use flexbox for alignment */
-    align-items: center;
-    /* Vertically center items */
-   }
-  
-   .trip-period-img {
-    margin-right: 5px;
-    /* Space between icon and text */
-   }
-  
-
-
-
-
-
-
-
+}
+.book-text{
+    max-width: 511px;
+}
 .steps{
     font-weight: 700;
     font-size: 16px;
@@ -588,23 +483,265 @@
 .prots{
     color: #8A79DF;
 }
-.testimonials{
-    background: #fff;
-    padding: 34px;
-    max-width: 505px;
-    margin: 34px 48px 77px 37px;
-    z-index: 2;
+
+
+.testimonials-section{
+    background: white;
+    width: 1168px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 87px;
+    margin-bottom: 93px;
+
 }
+.testimonials-tit{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #5E6282;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Poppins", Arial, sans-serif;;
+    text-align: left;
+    margin-bottom: 8px;
+}
+.testimonials-container{
+    position: relative;
+    width: 671px;
+}
+.mike-otzyv{
+    width: 505px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 28px 67px 34px 33px;
+    box-shadow: 0 4px 24px rgba(89, 177, 230, 0.08);
+    position: relative;
+    z-index: 1;
+}
+.mike-otzyv-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #5E6282;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+}
+.man-name{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #5E6282;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.otzyv-city{
+    font-weight: 400;
+    font-size: 14px;
+    color: #5E6282;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+}
+.otzyv-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    padding: 28px 34px;
+    margin-left: 50px;
+    width: 503px;
+    height: 232px;
+    z-index: -1;
+
+}
+
 .logos{
-    width: 1073px;
-    height: 162px; 
+    filter: grayscale(100%);
 }
 .logo-names{
-    background-color: #fff;
+    background: white;
+    width: 1073px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 99px;
-    padding: 0 ;
+    align-items: center;
+    gap: 60px;
+    padding-left: 186px;
+    padding-right: 181px;
+}
+.expedia{
+    filter: drop-shadow(0px 4px 18px rgba(0,0,0,0.18));
+}
 
+.subscribe-section{
+    padding: 109px 133px 96px 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/decor_plusiki.png); 
+    background-position: bottom right;
+    background-size: 153px 166px; 
+    background-repeat: no-repeat; 
+    background-attachment:local;
+}
+.subscribe-bg{
+    position: relative;
+    background:  url(../images/fon.png) no-repeat ;
+    background-size: cover;
+    padding: 79px 0;
+    width: 1200px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.subscribe-content{
+    text-align: center;
+}
+.subscribe-title{
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 54px;
+    color: #5E6282;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+    margin-bottom: 74px;
+    padding-left: 100px;
+}
+.subscribe-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.subscribe-form input[type="email"]{
+    padding: 25px 66px;
+    border-radius: 12px;
+    border: none;
+    background: #fff;
+    background-image: url(../images/pismo.svg);
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    width: 260px;
+    outline: none;
+}
+.email-text{
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: "GoogleSans", Arial, sans-serif;
+    color: #39425D;
+}
+.subscribe-text{
+    font-weight: 600;
+    font-size: 17px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 22px 50px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(90deg, #ff946d 0%, #ff7d68 100%);
+    cursor: pointer;
+    font-family: "GoogleSans", Arial, sans-serif;
+}  
+.paper-plane-icon{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+}
+
+
+.footer-logo{
+    font-weight: 500;
+    font-size: 44px;
+    color: #181E4B;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+    margin-bottom: 20px;
+}
+.footer-desc{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 124.5%;
+    color: #5E6282;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+}
+.footer-title{
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 124.5%;
+    color: #080809;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+    margin-bottom: 34px;
+}
+.footer-link{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 124.5%;
+    color: #5E6282;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+    margin-bottom: 13px;
+}
+.footer-social{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 26px;
+}
+.footer-discover{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 124.5%;
+    letter-spacing: 0.5%;
+    color: #5E6282;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+    margin-bottom: 16px;
+}
+.footer-stores{
+    display: flex;
+    gap: 7px;
+}
+.footer-copyright{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 124.5%;
+    color: #5E6282;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+    text-align: center;
+    margin-top: 84px;
+}
+.footer{
+  background: #fff;
+  padding: 96px 0 79px 0;
+  margin-left: 186px;
+  margin-right: 194px;
+}
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.footer-brand {
+  max-width: 207px;
+}
+.footer-links {
+  display: flex;
+  gap: 81px;
+}
+.footer-links-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-apps{
+    max-width: 214px;
 }

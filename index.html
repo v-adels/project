@@ -19,8 +19,6 @@
                 <button class="button-transparent" >EN<img src="images/gal.svg " alt="Галочка" width="9" height="5" class="gal"></button>
           </nav>
     </header>
-
-
     <main>
         <section class="hero">
             <div class="hero-container">
@@ -39,8 +37,6 @@
                 </div>
             </div>   
         </section>
-
-
         <section class="section-services">
             <div class="services-container">
                 <div class="services-header">
@@ -73,36 +69,35 @@
                 </div>
             </div>
         </section>    
-        
-        <section>
+        <section class="top-destinations-section">
             <div class="destination-container">
                 <h1 class="top-selling">Top Selling</h1>
                 <h2 class="top-destination">Top Destinations</h2>
                 <ul class="destination-grid">
-                    <li class="rome-card">
-                        <div class="info-box">
+                    <li class="destination-card">
+                        <img src="images/rome.png" alt="Картинка" width="314" height="327" class="destination-image ">
+                        <div class="destination-info">
                             <h3 class="contry-name">Rome, Italty <span class="price">$5,42k</span></h3>
                             <p class="trip-period"><img src="images/navigator_strelka.svg" alt="Логотип" width="20" height="20" class="trip-period-img">10 Days Trip</p>
                         </div>
                     </li>
-
-
-                    <li class="london">
+                    <li class="destination-card">
+                        <img src="images/london.png" alt="Картинка" width="314" height="327">
                         <h3 class="contry-name">London, UK <span>$4.2k</span></h3>
                         <p class="trip-period"><img src="images/navigator_strelka.svg" alt="Логотип" width="20" height="20">12 Days Trip</p>   
                     </li>
-                    <li>
-                        <img src="images/full_europe.png" alt="Картинка" width="314" height="457">
+                    <li class="destination-card">
+                        <img src="images/evorope.png" alt="Картинка" width="314" height="327">
                         <h3 class="contry-name">Full Europe <span>$15k</span></h3>
                         <p class="trip-period"><img src="images/navigator_strelka.svg" alt="Логотип" width="20" height="20">12 Days Trip</p> 
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="b">
-            <div>
-                <h1 class="category">Easy and Fast</h1>
-                <h2 class="services">Book your next trip In 3 easy steps</h2>
+        <section class="book-trip">
+            <div >
+                <h1 class="easy">Easy and Fast</h1>
+                <h2 class="book">Book your next trip In 3 easy steps</h2>
                 <ul>
                     <li>
                         <img src="images/yellow_icon.svg" alt="Картинка" width="47" height="48">
@@ -151,37 +146,102 @@
                 </div>
             </div>    
         </section>
-        <section>
+        <section class="testimonials-section">
             <div>
-                <p>Testimonials</p>
-                <h1>What People Say About Us.</h1>
+                <p class="testimonials-tit">Testimonials</p>
+                <h1 class="book">What People Say About Us.</h1>
                 <img src="images/tochki.svg" alt="Картинка" width="87" height="12">
             </div>
-            <div class="testimonials">
+            <div class="testimonials-container " >
                 <img src="images/man.png" alt="Картинка" width="68" height="68">
-                <div>
-                    <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
-                    <p>Mike taylor</p>
-                    <p>Lahore, Pakistan</p>
+                <div class="mike-otzyv">
+                    <p class="mike-otzyv-text">“On the Windows talking painted pasture yet its <br> express parties use. Sure last upon he same as <br>knew next. Of believed or diverted no.”</p>
+                    <p class="man-name">Mike taylor</p>
+                    <p class="otzyv-city">Lahore, Pakistan</p>
                 </div>
-                <div>
-                    <p>Chris Thomas</p>
-                    <p>CEO of Red Button</p>
+                <div class="otzyv-two">
+                    <p class="man-name">Chris Thomas</p>
+                    <p class="otzyv-city">CEO of Red Button</p>
                 </div>
+            </div>
+            <div>
+                <img src="images/strelki.svg" alt="Картинка" width="14" height="72">
             </div>
         </section>
         <section class="logo-names">
-            <div class="logos">
-                <img src="images/axon_logo.svg" alt="Картинка" width="130" height="130">
-                <img src="images/jetstar_logo.svg" alt="Картинка" width="173" height="110">
-                <img src="images/expedia_logo.svg" alt="Картинка" width="241" height="162">
-                <img src="images/qantas_logo.svg" alt="Картинка" width="162" height="32">
-                <img src="images/alitalia_logo.svg" alt="Картинка" width="94" height="21">
-            </div>
+                <img src="images/axon_logo.svg" alt="Картинка" width="130" height="40" class="logos">
+                <img src="images/jetstar_logo.svg" alt="Картинка" width="173" height="40" class="logos">
+
+                <img src="images/expedia_logo.svg" alt="Картинка" width="241" height="86" class="expedia">
+                <img src="images/qantas_logo.svg" alt="Картинка" width="162" height="32" class="logos">
+                <img src="images/alitalia_logo.svg" alt="Картинка" width="94" height="21" class="logos">
         </section>
+        <section class="subscribe-section">
+            <div class="subscribe-bg">
+              <div class="subscribe-content">
+                <h2 class="subscribe-title">Subscribe to get information, latest news and other<br>interesting offers about Jadoo</h2>
+                <form class="subscribe-form">
+                    <input type="email" class="email-text" placeholder="Your email" required>
+                    <button class="subscribe-text">Subscribe</button>
+                </form>
+              </div>
+              <div class="paper-plane-icon">
+                <img src="images/subscribe.svg" alt="Картинка" width="70" height="70" >
+              </div>
+            </div>
+          </section>
     </main> 
-    <footer>
-        
-    </footer>     
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <div class="footer-logo">Jadoo.</div>
+            <div class="footer-desc">
+              Book your trip in minute, get full<br>
+              Control for much longer.
+            </div>
+          </div>
+          <div class="footer-links">
+            <div>
+              <div class="footer-title">Company</div>
+              <ul class="footer-links-ul">
+                <li class="footer-link">About</li>
+                <li class="footer-link">Careers</li>
+                <li class="footer-link">Mobile</li>
+              </ul>
+            </div>
+            <div>
+              <div class="footer-title">Contact</div>
+              <ul class="footer-links-ul">
+                <li class="footer-link">Help/FAQ</li>
+                <li class="footer-link">Press</li>
+                <li class="footer-link">Affilates</li>
+              </ul>
+            </div>
+            <div>
+              <div class="footer-title">More</div>
+              <ul class="footer-links-ul">
+                <li class="footer-link">Airlinefees</li>
+                <li class="footer-link">Airline</li>
+                <li class="footer-link">Low fare tips</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-apps">
+            <div class="footer-social">
+              <img src="images/facebook_icon.svg" alt="Facebook" width="61" height="61"/>
+              <img src="images/instlogo.png" alt="Instagram" width="65" height="65"/>
+              <img src="images/twitter.svg" alt="Twitter" width="61" height="61"/>
+            </div>
+            <div class="footer-discover">Discover our app</div>
+            <div class="footer-stores">
+              <img src="images/google_play.svg" alt="Get it on Google Play" width="107" height="35"/>
+              <img src="images/apple_store.svg" alt="Download on the App Store" width="100" height="35"/>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          All rights reserved@jadoo.co
+        </div>
+    </footer> 
 </body>
 </html>
