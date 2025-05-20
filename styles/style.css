@@ -291,7 +291,10 @@
     margin: 0;
 }
 
-
+.top-destinations-section{
+    width: 1102px;
+    margin: 0 auto;
+}
 .destination-container{
     max-width: 1102px;
     padding-right: 60px;
@@ -347,10 +350,11 @@
     line-height: 124.5%;
     color: #5E6282;
     text-decoration: none;
+    margin: 0;
     font-family: "Poppins", Arial, sans-serif;
 }
 .price{
-    padding-left: 85px;
+    padding-left: 103px;
 }
 .trip-period{
     font-weight: 400;
@@ -358,18 +362,25 @@
     line-height: 124.5%;
     color: #5E6282;
     text-decoration: none;
+    margin-bottom: 42px;
     font-family: "Poppins", Arial, sans-serif;
+}
+.strel{
+    margin-right: 15px;
 }
 
 
 .book-trip{
     width: 1114px;
-    margin-top: 185px;
     display: flex;
+    gap: 117px;
     justify-content: center;
     align-items: center;
-    gap: 117px;
-    padding-left: 186px;
+    margin: 0 auto;
+    padding-top: 185px;
+}
+.book-steps{
+    width: 515px;
 }
 .easy{
     font-weight: 600;
@@ -379,7 +390,18 @@
     text-decoration: none;
     font-family: "Poppins", Arial, sans-serif;;
     text-align: left;
-    margin-bottom: 16px;
+    margin: 0;
+}
+.values{
+    list-style-type: none;
+    width: 395px;
+    padding: 0;
+    margin: 0;
+}
+.punkt{
+    display: flex;
+    gap: 21px;
+    margin-bottom: 48px;
 }
 .book{
     font-weight: 700;
@@ -387,6 +409,9 @@
     color: #14183E;
     text-decoration: none;
     font-family: "Volkhov", Arial, sans-serif;
+    margin: 0;
+    margin-bottom: 31px;
+    padding-top: 16px;
 }
 .book-text{
     max-width: 511px;
@@ -397,6 +422,17 @@
     line-height: 124.5%;
     color: #5E6282;
     text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+    padding-bottom: 4px;
+}
+.steps-paragraf{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 124.5%;
+    color: #5E6282;
+    text-decoration: none;
+    margin: 0;
     font-family: "Poppins", Arial, sans-serif;
 }
 .trip-title{
@@ -425,28 +461,39 @@
     color: #5E6282;
     text-decoration: none;
     font-family: "Poppins", Arial, sans-serif;
+    padding-left: 15px;
+}
+.heart{
+    float: right;
 }
 .card-container{
-    position: relative;
     width: 486px;
-    margin: 60px;
+    margin: 0px;
 }
 .trip-card{
     width: 370px;
+    height: 400px;
     background: #FFFFFF;
     border-radius: 26px;
     padding: 24px;
-    box-shadow: 0 4px 24px rgba(89, 177, 230, 0.08);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
     position: relative;
     z-index: 1;
 }
+.icon-card{
+    display: flex;
+    gap: 15px;
+    margin: 25px 0;
+}
 .overlay-card{
+    width: 263px;
+    height: 100px;
     display: flex;
     gap: 12px;
     position: absolute;
     background: #FFFFFF;
-    top: 218px;
-    right: -35px;
+    top: 250px;
+    right: -100px;
     border-radius: 18px;
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
     padding: 16px 20px;
@@ -457,28 +504,30 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 124.5%;
-    letter-spacing: -3.5%;
     color: #84829A;
     text-decoration: none;
     font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
 }
 .trip-to-rome{
     font-weight: 400;
     font-size: 18px;
     line-height: 124.5%;
-    letter-spacing: -1.5%;
     color: #080809;
     text-decoration: none;
     font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+    padding-top: 6px;
 }
 .protsents{
     font-weight: 400;
     font-size: 14px;
     line-height: 124.5%;
-    letter-spacing: -5.5%;
     color: #080809;
     text-decoration: none;
     font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+    padding-top: 14px;
 }
 .prots{
     color: #8A79DF;
@@ -489,10 +538,11 @@
     background: white;
     width: 1168px;
     justify-content: center;
-    align-items: center;
     display: flex;
     gap: 87px;
+    margin: 0 auto;
     margin-bottom: 93px;
+    margin-top: 180px;
 
 }
 .testimonials-tit{
@@ -506,18 +556,35 @@
     text-align: left;
     margin-bottom: 8px;
 }
+.what-say{
+    font-weight: 700;
+    font-size: 50px;
+    color: #14183E;
+    text-decoration: none;
+    font-family: "Volkhov", Arial, sans-serif;
+    margin: 0;
+    margin-bottom: 82
+    px;
+    padding: 0;
+}
 .testimonials-container{
     position: relative;
-    width: 671px;
+    max-width: 671px;
+    height: 356px;
+}
+.mike-otzyv-img{
+    position: relative;
+    z-index: 10;
 }
 .mike-otzyv{
-    width: 505px;
+    width: 470px;
     background: #FFFFFF;
     border-radius: 10px;
     padding: 28px 67px 34px 33px;
     box-shadow: 0 4px 24px rgba(89, 177, 230, 0.08);
     position: relative;
-    z-index: 1;
+    z-index: 2;
+    margin-top: -35px;
 }
 .mike-otzyv-text{
     font-weight: 400;
@@ -543,6 +610,8 @@
     color: #5E6282;
     text-decoration: none;
     font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+    margin-top: 6px;
 }
 .otzyv-two{
     display: flex;
@@ -553,11 +622,15 @@
     border-radius: 10px;
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
     padding: 28px 34px;
-    margin-left: 50px;
+    margin: 0;
     width: 503px;
     height: 232px;
-    z-index: -1;
-
+    position: absolute;
+    left: 45px;
+    top: 75px;
+}
+.strelki{
+    margin-top: 140px;
 }
 
 .logos{
