@@ -48,7 +48,7 @@
 
 
 .body{
-    width: 1440px; 
+    max-width: 1440px; 
     margin: 0 auto; 
     background-image: url(../images/decoration.svg); 
     background-position: top right;
@@ -818,3 +818,4 @@
 .footer-apps{
     max-width: 214px;
 }
+@import "media.css";
