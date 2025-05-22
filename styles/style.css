@@ -1,3 +1,5 @@
+@import url(header.css);
+@import url(main.css);
 @font-face{
     font-family: "Poppins";
     src: url("../fonts/Poppins-SemiBold/ttf");
@@ -42,14 +44,14 @@
     align-items: center; 
     padding: 20px; 
     background-color:transparent; 
-    margin-left: 122px;
-    margin-right: 207px;
+    padding-left: 122px;
+    padding-right: 207px;
 }
 
 
 .body{
-    max-width: 1440px; 
-    margin: 0 auto; 
+    width: 100%;
+    max-width: 1440px;
     background-image: url(../images/decoration.svg); 
     background-position: top right;
     background-size: 873px 694px; 
@@ -68,7 +70,8 @@
     color: #212832;
     text-decoration: none;
     font-family: "Google Sans", Arial, sans-serif;
-    margin-right: 50px;
+    padding-right: 50px;
+    margin: 0;
 }
 .button{
     font-size: 17px;
@@ -204,7 +207,8 @@
 
 .section-services{
     padding: 60px 0;
-    width: 1230px; 
+    max-width: 1230px; 
+    width: 100%;
     margin: 0 auto; 
     background-image: url(../images/decor_plusiki.png); 
     background-position: top right;
@@ -213,11 +217,7 @@
     background-attachment:local;
     z-index: -1;
 }
-.services-container{
-    max-width: 1230px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+
 .services-header{
     text-align: center;
     margin-bottom: 60px;
@@ -242,6 +242,7 @@
     margin-bottom: 10px;
 }
 .services-grid{
+
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 70px;
@@ -292,7 +293,7 @@
 }
 
 .top-destinations-section{
-    width: 1102px;
+    max-width: 1102px;
     margin: 0 auto;
 }
 .destination-container{
@@ -371,7 +372,7 @@
 
 
 .book-trip{
-    width: 1114px;
+    max-width: 1114px;
     display: flex;
     gap: 117px;
     justify-content: center;
@@ -536,7 +537,8 @@
 
 .testimonials-section{
     background: white;
-    width: 1168px;
+    width: 100%;
+    max-width: 1168px;
     justify-content: center;
     display: flex;
     gap: 87px;
@@ -555,6 +557,11 @@
     font-family: "Poppins", Arial, sans-serif;;
     text-align: left;
     margin-bottom: 8px;
+}
+.tochki{
+    display: flex;
+    justify-content: flex-start;
+    
 }
 .what-say{
     font-weight: 700;
@@ -638,7 +645,8 @@
 }
 .logo-names{
     background: white;
-    width: 1073px;
+    max-width: 1073px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -818,4 +826,131 @@
 .footer-apps{
     max-width: 214px;
 }
-@import "media.css";
+@media (max-width: 1024px){
+.body {
+    width: 100%; 
+    background-size: 600px 480px;
+    background-position: top right; 
+} 
+.header{
+    gap: 20px;
+    padding-left: 50px;
+    padding-right: 70px;
+}    
+.menu-link {
+    padding-right: 20px;
+}
+.button{
+    margin-right: 20px
+}
+.hero{
+    padding: 20px 10px;
+}
+.b-link {
+    font-size: 70px;
+}
+.hero-image {
+    justify-content: flex-end;
+    margin-right: 20px; 
+}
+.best-destinations {
+    margin: 0;
+}
+.section-services {
+        padding: 30px 0;
+}
+.services {
+    margin: 0;
+    padding: 5px;
+}
+.services-header {
+    margin-bottom: 30px;
+}
+.services-grid {
+    grid-template-columns: repeat(2, 2fr);
+    gap: 40px;
+}
+.flights-card {
+    width: 492px;
+}
+.flights {
+    width: 400px;
+}
+.top-destination {
+    margin: 25px 0;
+}
+.price {
+    padding-left: 50px;
+}
+
+.book-trip {
+    flex-direction: column;
+    padding-top: 60px;
+    gap: 40px;
+}
+.book {
+    padding-top: 0;
+}
+.values {
+    width: 600px;
+}
+.punkt {
+    margin-bottom: 20px;
+}
+.testimonials-section {
+    flex-wrap: wrap;
+    margin: 60px 0;
+    gap: 45px;
+}
+.testimonials-tit{
+    text-align: center;
+}
+.what-say{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.mike-otzyv-img {
+    width: 57px;
+    height: 57px;
+}
+.tochki{
+    margin: 0 auto;
+}
+.logo-names {
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 10px;
+}
+.logos{
+    width: 120px;
+    height: 35px;
+}
+.expedia {
+    width: 200px;
+    height: 60px;
+}
+.subscribe-title {
+    font-size: 28px;
+}
+.subscribe-section {
+    padding: 82px 64px 0px 53px;
+}
+.footer {
+    padding: 60px 0;
+    margin: 0 70px ;
+}
+.footer-links {
+    gap: 24px;
+}
+.footer-title {
+    margin-bottom: 20px;
+}
+
+.footer-social {
+        margin-bottom: 8px;
+        gap: 10px;
+}
+.footer-copyright {
+        margin-top: 60px;
+}
+}

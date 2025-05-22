@@ -1,0 +1,24 @@
+.button{
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Google Sans", Arial, sans-serif;
+    line-height: 22px;
+    background-color: transparent;
+    color: #212832;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer; 
+    margin-right: 42px;
+    transition: background-color 0.3s,
+    color 0.3s;
+}
+.button:hover {
+    background-color: #212832; 
+    color: white; 
+}
+.button:active {
+ background-color: #F1A501;
+ color: #ffffff;
+}
+
